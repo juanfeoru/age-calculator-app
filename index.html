@@ -14,38 +14,41 @@
 
   <title>Frontend Mentor | Age calculator app</title>
   <link href="./output.css" rel="stylesheet">
+  <script src="js/script.js" type="module"></script>
 </head>
 
 <body class="font-poppins bg-grey-100 flex items-center justify-center m-8 min-h-dvh">
   <div class="bg-white rounded-2xl px-6 py-12 rounded-br-[62px] md:max-w-2xl md:w-full md:rounded-br-[150px] md:px-10">
     <section class="flex gap-x-4 md:gap-x-8">
       <div class="flex flex-col max-w-20 md:max-w-29">
-        <label class="tracking-[2px] text-xs text-grey-500 font-bold" for="day">DAY</label>
+        <label class="tracking-[2px] text-xs text-grey-500 font-bold" for="day" id="label-day">DAY</label>
         <input
-          class="border border-grey-200 rounded-md mt-1 py-2 font-bold no-spinner w-20 outline-none px-4 focus:border-purple-500 cursor-pointer md:w-26 md:text-2xl"
+          class="border border-grey-200 rounded-md mt-1 py-2 font-bold no-spinner w-20 outline-none px-4 focus:border-purple-500 cursor-pointer md:w-26 md:text-2xl "
           type="number" id="day" placeholder="DD">
-        <p class="text-red-400 text-[10px] italic text-pretty mt-1"></p>
+        <p class="text-red-400 text-[10px] italic text-pretty mt-1" id="error-text"></p>
       </div>
       <div class=" flex flex-col max-w-20 md:max-w-29">
-        <label class="tracking-[2px] text-xs text-grey-500 font-bold" for="month">MONTH</label>
+        <label class="tracking-[2px] text-xs text-grey-500 font-bold" for="month" id="label-month">MONTH</label>
         <input
           class="border border-grey-200 rounded-md mt-1 py-2 font-bold no-spinner w-20 outline-none px-4 focus:border-purple-500 cursor-pointer md:w-26 md:text-2xl"
           type="number" id="month" placeholder="MM">
-        <p class="text-red-400 text-[10px] italic text-pretty mt-1"></p>
+        <p class="text-red-400 text-[10px] italic text-pretty mt-1" id="error-text"></p>
       </div>
       <div class=" flex flex-col max-w-20 md:max-w-29">
-        <label class="tracking-[2px] text-xs text-grey-500 font-bold" for="year">YEAR</label>
+        <label class="tracking-[2px] text-xs text-grey-500 font-bold" for="year" id="label-year">YEAR</label>
         <input
           class="border border-grey-200 rounded-md mt-1 py-2 font-bold no-spinner w-20 outline-none px-4 focus:border-purple-500 cursor-pointer md:w-26 md:text-2xl"
           type="number" id="year" placeholder="YYYY">
-        <p class="text-red-400 text-[10px] italic text-pretty mt-1"></p>
+        <p class="text-red-400 text-[10px] italic text-pretty mt-1" id="error-text"></p>
       </div>
     </section>
     <div class="my-12 relative ">
       <hr class="text-grey-200 ">
       <div
         class="bg-purple-500 absolute rounded-full -top-6 left-1/2 -translate-x-1/2 p-3 hover:bg-black cursor-pointer md:-top-8 md:right-0 md:left-auto md:translate-x-0">
-        <img src="/assets/images/icon-arrow.svg" alt="" class="size-6 md:size-10">
+        <button type="button" class="size-6 flex items-center justify-center md:size-10" id="convert-date">
+          <img src="/assets/images/icon-arrow.svg" alt="">
+        </button>
       </div>
     </div>
     <section>
