@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/)
+- Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/solutions/age-calculator-app-oOOwC0YgBe)
 - Live Site URL: [Live demo](https://juanfeoru.github.io/age-calculator-app/)
 
 ## My process
