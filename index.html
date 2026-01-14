@@ -14,7 +14,7 @@
 
   <title>Frontend Mentor | Age calculator app</title>
   <link href="./output.css" rel="stylesheet">
-  <script src="js/script.js" type="module"></script>
+  <script src="./js/script.js" type="module"></script>
 </head>
 
 <body class="font-poppins bg-grey-100 flex items-center justify-center m-8 min-h-dvh">
@@ -25,42 +25,43 @@
         <input
           class="border border-grey-200 rounded-md mt-1 py-2 font-bold no-spinner w-20 outline-none px-4 focus:border-purple-500 cursor-pointer md:w-26 md:text-2xl "
           type="number" id="day" placeholder="DD">
-        <p class="text-red-400 text-[10px] italic text-pretty mt-1" id="error-text"></p>
+        <p class="text-red-400 text-[10px] italic text-pretty mt-1" id="error-text-day"></p>
       </div>
       <div class=" flex flex-col max-w-20 md:max-w-29">
         <label class="tracking-[2px] text-xs text-grey-500 font-bold" for="month" id="label-month">MONTH</label>
         <input
           class="border border-grey-200 rounded-md mt-1 py-2 font-bold no-spinner w-20 outline-none px-4 focus:border-purple-500 cursor-pointer md:w-26 md:text-2xl"
           type="number" id="month" placeholder="MM">
-        <p class="text-red-400 text-[10px] italic text-pretty mt-1" id="error-text"></p>
+        <p class="text-red-400 text-[10px] italic text-pretty mt-1" id="error-text-month"></p>
       </div>
       <div class=" flex flex-col max-w-20 md:max-w-29">
         <label class="tracking-[2px] text-xs text-grey-500 font-bold" for="year" id="label-year">YEAR</label>
         <input
           class="border border-grey-200 rounded-md mt-1 py-2 font-bold no-spinner w-20 outline-none px-4 focus:border-purple-500 cursor-pointer md:w-26 md:text-2xl"
           type="number" id="year" placeholder="YYYY">
-        <p class="text-red-400 text-[10px] italic text-pretty mt-1" id="error-text"></p>
+        <p class="text-red-400 text-[10px] italic text-pretty mt-1" id="error-text-year"></p>
       </div>
     </section>
     <div class="my-12 relative ">
       <hr class="text-grey-200 ">
       <div
-        class="bg-purple-500 absolute rounded-full -top-6 left-1/2 -translate-x-1/2 p-3 hover:bg-black cursor-pointer md:-top-8 md:right-0 md:left-auto md:translate-x-0">
-        <button type="button" class="size-6 flex items-center justify-center md:size-10" id="convert-date">
-          <img src="/assets/images/icon-arrow.svg" alt="">
+        class="bg-purple-500 absolute rounded-full -top-6 left-1/2 -translate-x-1/2 p-3 hover:bg-black md:-top-8 md:right-0 md:left-auto md:translate-x-0">
+        <button type="button" class="size-6 flex items-center justify-center md:size-10 cursor-pointer"
+          id="convert-date">
+          <img src="./assets/images/icon-arrow.svg" alt="">
         </button>
       </div>
     </div>
     <section>
       <ul>
         <li class="text-5xl font-extrabold italic md:text-7xl">
-          <span class="text-purple-500">--</span> <span>years</span>
+          <span id="calculate-years" class="text-purple-500">--</span> <span>years</span>
         </li>
         <li class="text-5xl font-extrabold italic md:text-7xl">
-          <span class="text-purple-500">--</span> <span>months</span>
+          <span id="calculate-months" class="text-purple-500">--</span> <span>months</span>
         </li>
         <li class="text-5xl font-extrabold italic md:text-7xl">
-          <span class="text-purple-500">--</span> <span>days</span>
+          <span id="calculate-days" class="text-purple-500">--</span> <span>days</span>
         </li>
       </ul>
     </section>
